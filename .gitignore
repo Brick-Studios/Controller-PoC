@@ -28,8 +28,6 @@ BeastArena
 # Some random build file
 main.plist
 
-# Pictures
-build/*.png
-
-# Built binaries
-build/SDL2Test
+# Ignore build folder contents
+build/*
+!/build/.gitkeep
