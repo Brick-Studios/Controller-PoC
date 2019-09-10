@@ -1,0 +1,35 @@
+# CMake and Unix Makefiles
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+# Ninja
+.ninja_deps
+.ninja_log
+
+# Unix library build
+*.a
+*.o
+
+# The binary
+BeastArena
+
+# VSCode
+.vscode
+
+# Some random build file
+main.plist
+
+# Pictures
+build/*.png
+
+# Built binaries
+build/SDL2Test
