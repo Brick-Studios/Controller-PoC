@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+    - name: Add Universe repo
+      run: sudo add-apt-repository universe
     - name: Install SDL dependencies
       run: sudo apt-get install libsdl2 libsdl2-gfx libsdl2-gfx-dev libsdl2-image libsdl2-image libsdl2-mixer libsdl2-mixer-dev libsdl2-net libsdl2-net-dev
     - name: 
