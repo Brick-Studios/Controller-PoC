@@ -25,6 +25,6 @@ jobs:
         cmake ..
         make
     - uses: actions/upload-artifact@master
-        with:
-          name: artifact
-          path: build/
+      with:
+        name: artifact
+        path: build/
