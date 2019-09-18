@@ -40,7 +40,7 @@ int main() {
             SDL_JoystickClose(joy);
         }
     } else {
-        std::cout << "Controller not connected" << std::endl;
+        std::cout << "Controller not connected, please connect a controller." << std::endl;
     }
 }
 
