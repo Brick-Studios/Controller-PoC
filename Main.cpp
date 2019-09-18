@@ -12,7 +12,8 @@ int main() {
     if (SDL_NumJoysticks() > 0) {
         // Open joystick
         joy = SDL_JoystickOpen(0);
-    
+        
+        // Print joystick info
         if (joy) {
             std::cout << "Opened Joystick 0" << std::endl;
             std::cout << "Name: " << SDL_JoystickNameForIndex(0) << std::endl;
@@ -40,7 +41,7 @@ int main() {
             SDL_JoystickClose(joy);
         }
     } else {
-        std::cout << "Controller not connected" << std::endl;
+        std::cout << "Controller not connected, please connect a controller." << std::endl;
     }
 }
 
