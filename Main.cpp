@@ -31,6 +31,7 @@ int main() {
         {
             while( SDL_PollEvent( &e ) != 0 )
             {
+                std::cout << "Someone pressed a button!" << std::endl;
                 std::cout << e.type << std::endl;
             }
         }
