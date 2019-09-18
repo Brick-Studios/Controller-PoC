@@ -10,13 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Print repositories
-      run: apt policy
-    - name: Update
-      run: sudo apt-get update
+    - name: Clone submodules
+      run: git submodule update --init --recursive
     - name: Install SDL dependencies
-      run: sudo apt-get install libsdl2-2.0-0 libsdl2-gfx-1.0-0 libsdl2-gfx-dev libsdl2-image-2.0-0 libsdl2-image-dev libsdl2-mixer-2.0-0 libsdl2-mixer-dev libsdl2-net-2.0-0 libsdl2-net-dev
+      run: sudo apt-get install libsdl2-dev libsdl2-gfx-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-net-dev libsdl2-ttf-dev
     - name: 
       run: |
         cd build
+        cmake ..
         make
