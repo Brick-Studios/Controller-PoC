@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Install SDL dependencies
-      run: apt-get libsdl2 libsdl2 libsdl2-gfx libsdl2-gfx-dev libsdl2-image libsdl2-image libsdl2-mixer libsdl2-mixer-dev libsdl2-net libsdl2-net-dev
+      run: apt-get install libsdl2 libsdl2-gfx libsdl2-gfx-dev libsdl2-image libsdl2-image libsdl2-mixer libsdl2-mixer-dev libsdl2-net libsdl2-net-dev
     - name: 
       run: |
         cd build
