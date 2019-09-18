@@ -12,7 +12,8 @@ int main() {
     if (SDL_NumJoysticks() > 0) {
         // Open joystick
         joy = SDL_JoystickOpen(0);
-    
+        
+        // Print joystick info
         if (joy) {
             std::cout << "Opened Joystick 0" << std::endl;
             std::cout << "Name: " << SDL_JoystickNameForIndex(0) << std::endl;
